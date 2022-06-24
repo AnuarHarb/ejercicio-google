@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 body {
   font-family: arial;
 }
@@ -49,11 +53,19 @@ header a:hover {
   padding: 20px;
 }
 
-.input-img {
-  width: 32px;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 140px;
 }
 
-.input-container {
+.google-image {
+  transition: 0.4s ease-in all;
+}
+
+.search {
   border: 2px solid black;
   border-radius: 40px;
   display: flex;
@@ -63,13 +75,67 @@ header a:hover {
   padding: 0 10px;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.search:hover {
+  box-shadow: 0 0 8px lightgray;
 }
 
-input {
+.search-input {
   border: none;
   width: 400px;
+  font-size: 22px;
+  padding: 8px 8px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-img {
+  width: 22px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.actions-button {
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  border: 1px solid transparent;
+}
+
+.actions-button:hover {
+  border: 1px solid lightgray;
+  box-shadow: 0px 0px 8px lightgray;
+}
+
+.actions-button:active {
+  transform: translateY(1px);
+}
+
+footer {
+  background-color: lightgray;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-box-one {
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer-box div {
+  display: flex;
+  gap: 20px;
 }

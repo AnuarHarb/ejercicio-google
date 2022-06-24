@@ -22,13 +22,50 @@
       </div>
     </header>
 
+    <!-- BEM  (Box Element Modifier) -->
     <section>
-      <img src="./img/logo-google.png" />
-      <div class="input-container">
-        <img class="input-img" src="./img/lupa.png" />
-        <input type="text" />
-        <img class="input-img" src="./img/microfono.png" />
+      <img class="google-image" src="./img/google-doodle.png" />
+
+      <div class="search">
+        <img class="search-img" src="./img/lupa.png" />
+        <input id="input" class="search-input" type="text" />
+        <img class="search-img" src="./img/microfono.png" />
+      </div>
+
+      <div class="actions">
+        <button
+          id="boton-de-buscar"
+          class="actions-button"
+          onclick="buscarEnGoogle()"
+        >
+          Buscar
+        </button>
+        <button id="boton-de-suerte"" class="actions-button">
+          Voy a tener suerte
+        </button>
       </div>
     </section>
+
+    <footer>
+      <article class="footer-box-one">Colombia</article>
+      <article class="footer-box">
+        <div>
+          <a
+            href="https://about.google/?utm_source=google-CO&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+            >Sobre Google</a
+          >
+          <a>Sobre Google</a>
+          <a>Sobre Google</a>
+          <a>Sobre Google</a>
+        </div>
+        <div>
+          <a>Privacidad</a>
+          <a>Privacidad</a>
+          <a>Privacidads</a>
+        </div>
+      </article>
+    </footer>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
